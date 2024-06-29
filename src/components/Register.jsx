@@ -30,7 +30,7 @@ function Register() {
     setError(''); 
     console.log(formData);
     try {
-      const response = await axios.post("http://localhost:8000/user/register", formData, { withCredentials: true });
+      const response = await axios.post("https://scholarship-4vtq.onrender.com/user/register", formData, { withCredentials: true });
       if (response.status === 200) {
         navigateTo("/login");
       } else {

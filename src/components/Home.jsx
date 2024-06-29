@@ -18,7 +18,7 @@ const Home = () => {
     setError('');
     try {
       const queryParams = new URLSearchParams(filters).toString();
-      const res = await axios.get(`http://localhost:8000/scholarship/show?${queryParams}`, { withCredentials: true });
+      const res = await axios.get(`https://scholarship-4vtq.onrender.com/scholarship/show?${queryParams}`, { withCredentials: true });
       setScholarships(res?.data || []);
     } catch (err) {
       setError('Failed to fetch scholarships');
@@ -38,7 +38,7 @@ const Home = () => {
 
   const handleApply = async (id) => {
     try {
-      const res = await axios.get(`http://localhost:8000/scholarship/apply/${id}`, { withCredentials: true });
+      const res = await axios.get(`https://scholarship-4vtq.onrender.com/scholarship/apply/${id}`, { withCredentials: true });
       console.log(res.data);
     } catch (err) {
       console.error(err);

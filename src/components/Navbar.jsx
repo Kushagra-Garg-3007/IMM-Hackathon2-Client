@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     axios
-      .get("https://scholarship-4vtq.onrender.com/user/logout", { withCredentials: true })
+      .get("https://scholarship-ybb2.onrender.com/user/logout", { withCredentials: true })
       .then((response) => {
         console.log("Logout successful:", response);
         dispatch(setAuthUser(null));

@@ -14,7 +14,7 @@ const Applied = () => {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get('https://scholarship-4vtq.onrender.com/scholarship/showApplied', { withCredentials: true });
+      const res = await axios.get('https://scholarship-ybb2.onrender.com/scholarship/showApplied', { withCredentials: true });
       console.log(res)
       setAppliedScholarships(res?.data?.applied || []);
     } catch (err) {

@@ -22,7 +22,7 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("https://scholarship-4vtq.onrender.com/user/login", formData, { withCredentials: true });
+      const response = await axios.post("https://scholarship-ybb2.onrender.com/user/login", formData, { withCredentials: true });
       if (response) {
         dispatch(setAuthUser(response.data));
         navigateTo("/home");

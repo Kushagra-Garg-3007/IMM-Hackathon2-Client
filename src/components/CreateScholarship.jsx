@@ -24,7 +24,7 @@ const CreateScholarship = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('https://scholarship-4vtq.onrender.com/scholarship/add', formData, { withCredentials: true })
+      .post('https://scholarship-ybb2.onrender.com/scholarship/add', formData, { withCredentials: true })
       .then((response) => {
         console.log('Scholarship added successfully:', response.data);
         // Reset form
